@@ -5,6 +5,9 @@ import {
   Zap,
   Brain,
   ShieldCheck,
+  Sparkles,
+  MapPin,
+  Briefcase,
 } from 'lucide-react';
 import { PERSONAL_INFO, STATS } from '../constants/portfolioData';
 import { SectionHeading } from '../components/common/SectionHeading';
@@ -39,6 +42,21 @@ export const AboutSection: React.FC = () => {
     },
   ];
 
+  const coreCompetencies = [
+    'React',
+    'TypeScript',
+    'Node.js',
+    'Docker',
+    'AWS',
+    'Git',
+    'PostgreSQL',
+    'MongoDB',
+    'Python',
+    'Tailwind CSS',
+    'Vite',
+    'REST APIs',
+  ];
+
   return (
     <section id="about" className="relative py-24 md:py-32 bg-[#0E0E0E] overflow-hidden">
       {/* Background Subtle Grid Pattern */}
@@ -53,7 +71,7 @@ export const AboutSection: React.FC = () => {
 
         {/* Main Two-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
-          {/* Left Column: Narrative Biography & Focus Areas */}
+          {/* Left Column: Narrative Biography, Profile Portrait, & Focus Areas */}
           <motion.div
             variants={fadeUp(0.1, 0.7)}
             initial="hidden"
@@ -61,6 +79,35 @@ export const AboutSection: React.FC = () => {
             viewport={{ once: true }}
             className="lg:col-span-6 space-y-6"
           >
+            {/* Bio Card with Mini Photo Header */}
+            <div className="p-6 rounded-2xl bg-[#141414] border border-[#242424] shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-5">
+              <div className="relative shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-[#D4AF37]/50 shadow-[0_0_20px_rgba(212,175,55,0.15)] group">
+                <img
+                  src="/jhp.png"
+                  alt="Harshitha Priya"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              </div>
+
+              <div className="text-center sm:text-left space-y-1.5 flex-1">
+                <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                  <h3 className="text-xl font-editorial text-white">Harshitha Priya</h3>
+                  <span className="px-2 py-0.5 rounded-full bg-[#1C1C1C] border border-[#D4AF37]/40 text-[10px] font-mono text-[#F5D77F] flex items-center gap-1">
+                    <Sparkles size={10} className="text-[#D4AF37]" /> SWE
+                  </span>
+                </div>
+
+                <p className="text-xs font-mono text-[#A0A0A0] flex items-center justify-center sm:justify-start gap-1.5">
+                  <Briefcase size={12} className="text-[#D4AF37]" /> Full-Stack Software Engineer
+                </p>
+
+                <p className="text-xs font-mono text-[#777777] flex items-center justify-center sm:justify-start gap-1.5">
+                  <MapPin size={12} className="text-[#D4AF37]" /> Bangalore, India (Open to Worldwide Remote)
+                </p>
+              </div>
+            </div>
+
             <div className="space-y-4 text-base sm:text-lg text-[#CCCCCC] font-light leading-relaxed">
               <p>
                 Hello, I am <span className="text-white font-medium">{PERSONAL_INFO.name}</span>. I build robust, production-grade applications that operate smoothly under load while providing an intuitive, delightful user experience.
@@ -73,25 +120,13 @@ export const AboutSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Core Competencies Matrix */}
+            {/* Core Competencies Matrix with Small Logos for Scanning */}
             <div className="pt-4">
               <h4 className="text-xs font-mono text-[#D4AF37] uppercase tracking-widest mb-3">
-                Core Competencies & Focus
+                Core Competencies & Stack • Quick Scan
               </h4>
               <div className="flex flex-wrap gap-2">
-                {[
-                  'Full-Stack Development',
-                  'Software Engineering',
-                  'React',
-                  'TypeScript',
-                  'Node.js',
-                  'REST APIs',
-                  'Databases',
-                  'AI & Machine Learning',
-                  'Clean Code',
-                  'Performance Optimization',
-                  'Problem Solving',
-                ].map((tag) => (
+                {coreCompetencies.map((tag) => (
                   <Badge key={tag} variant="tech">
                     {tag}
                   </Badge>
@@ -162,3 +197,4 @@ export const AboutSection: React.FC = () => {
     </section>
   );
 };
+

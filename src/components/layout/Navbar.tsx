@@ -54,11 +54,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
             onClick={(e) => handleNavClick(e, '#home')}
             className="group flex items-center gap-3 cursor-pointer"
           >
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-[#141414] border border-[#262626] group-hover:border-[#D4AF37]/60 group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] transition-all duration-300">
-              <span className="font-editorial text-lg font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#FFF6D6] via-[#D4AF37] to-[#AA820A]">
-                HP
-              </span>
-              <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#D4AF37] shadow-[0_0_6px_#D4AF37]" />
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl overflow-hidden bg-[#141414] border border-[#262626] group-hover:border-[#D4AF37]/60 group-hover:shadow-[0_0_15px_rgba(212,175,55,0.25)] transition-all duration-300">
+              <img
+                src="/jhp.png"
+                alt="Harshitha Priya"
+                className="w-full h-full object-cover object-top"
+              />
+              <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-[#27C93F] border border-[#111111]" />
             </div>
 
             <div className="hidden sm:flex flex-col">

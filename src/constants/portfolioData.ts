@@ -3,7 +3,8 @@ import type { Project, Experience, SkillCategory, Certification, StatItem, NavIt
 export const PERSONAL_INFO = {
   name: 'Harshitha Priya',
   role: 'Full-Stack Software Engineer',
-  techStackSubtitle: 'JavaScript • TypeScript • React • Node.js',
+  avatarUrl: '/jhp.png',
+  techStackSubtitle: 'React • TypeScript • Node.js • Docker • AWS • Git',
   shortBio:
     'Building scalable web applications with modern frontend technologies, robust backend systems and clean software architecture. Passionate about AI, problem solving and creating elegant digital experiences.',
   fullBio: `I am a Full-Stack Software Engineer dedicated to crafting high-performance, aesthetically refined digital products that bridge engineering rigor with luxury visual design. 
@@ -17,6 +18,17 @@ With deep experience across modern React ecosystems, TypeScript, Node.js, and re
   availability: 'Available for Full-time Roles & High-Impact Engineering Projects',
   resumeUrl: '#resume-modal',
 };
+
+// Core tech stack items with icons for quick visual scanning
+export const CORE_QUICK_STACK = [
+  { name: 'React', display: 'React' },
+  { name: 'TypeScript', display: 'TS' },
+  { name: 'Node.js', display: 'Node' },
+  { name: 'Docker', display: 'Docker' },
+  { name: 'AWS', display: 'AWS' },
+  { name: 'Git', display: 'Git' },
+];
+
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#home' },
