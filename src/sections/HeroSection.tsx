@@ -24,7 +24,7 @@ import {
   AwsIcon,
   GitIcon,
 } from '../components/common/Icons';
-import { fadeUp, fadeIn, fadeRight } from '../utils/animations';
+import { fadeUp, fadeRight } from '../utils/animations';
 
 interface HeroSectionProps {
   onOpenResume: () => void;
@@ -159,7 +159,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
               variants={fadeUp(0.5, 0.7)}
               initial="hidden"
               animate="visible"
-              className="flex flex-wrap items-center gap-3.5 mb-10"
+              className="flex flex-wrap items-center gap-3.5"
             >
               <Button
                 variant="primary"
@@ -203,33 +203,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
                 >
                   LinkedIn
                 </Button>
-              </div>
-            </motion.div>
-
-            {/* Quick Metrics Strip */}
-            <motion.div
-              variants={fadeIn(0.6, 0.8)}
-              initial="hidden"
-              animate="visible"
-              className="pt-6 border-t border-[#1C1C1C] grid grid-cols-3 max-w-lg gap-4"
-            >
-              <div>
-                <span className="block font-editorial text-2xl text-white">3+</span>
-                <span className="text-[11px] font-mono text-[#888888] uppercase tracking-wider">
-                  Internships
-                </span>
-              </div>
-              <div>
-                <span className="block font-editorial text-2xl text-[#F5D77F]">15+</span>
-                <span className="text-[11px] font-mono text-[#888888] uppercase tracking-wider">
-                  Shipped Projects
-                </span>
-              </div>
-              <div>
-                <span className="block font-editorial text-2xl text-white">99.8%</span>
-                <span className="text-[11px] font-mono text-[#888888] uppercase tracking-wider">
-                  Code Quality
-                </span>
               </div>
             </motion.div>
           </div>
