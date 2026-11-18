@@ -14,7 +14,9 @@ With deep experience across modern React ecosystems, TypeScript, Node.js, and re
   phone: '+91 6300657893',
   github: 'https://github.com/HARSHITHAPRIYAJAVAJI',
   linkedin: 'https://www.linkedin.com/in/harshitha-priya-javaji',
-  location: 'Bangalore, India (Open to Worldwide Remote & Relocation)',
+  portfolioUrl: 'https://harshitha-priya-portfolio.vercel.app/',
+  portfolioGithub: 'https://github.com/HARSHITHAPRIYAJAVAJI/portfolio',
+  location: 'Hyderabad, India (Open to Worldwide Remote & Relocation)',
   availability: 'Available for Full-time Roles & High-Impact Engineering Projects',
   resumeUrl: '#resume-modal',
 };
@@ -266,15 +268,15 @@ Traditional creator platforms suffer from clunky storefront customization, slow 
     ],
   },
   {
-    id: 'smartcampus-plus',
-    slug: 'smartcampus-plus',
-    title: 'SmartCampus+',
+    id: 'smartcampus-360',
+    slug: 'smartcampus-360',
+    title: 'SmartCampus 360',
     tagline: 'Intelligent Academic & University Resource Management Ecosystem',
     description:
       'An enterprise academic operating system featuring automated timetable conflict resolution, smart laboratory equipment booking, role-based grading portals, and attendance auditing.',
-    fullOverview: `SmartCampus+ is an integrated enterprise-grade campus resource and academic management system designed to eliminate scheduling friction across complex multi-department institutions.
+    fullOverview: `SmartCampus 360 is an integrated enterprise-grade campus resource and academic management system designed to eliminate scheduling friction across complex multi-department institutions.
 
-Colleges and universities often struggle with disjointed legacy software for room allocations, faculty scheduling, and lab reservation. SmartCampus+ provides a unified, role-based platform that intelligently resolves scheduling bottlenecks through algorithmic constraint checking.`,
+Colleges and universities often struggle with disjointed legacy software for room allocations, faculty scheduling, and lab reservation. SmartCampus 360 provides a unified, role-based platform that intelligently resolves scheduling bottlenecks through algorithmic constraint checking.`,
     heroImage: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80',
     galleryImages: [
       'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80',
@@ -284,8 +286,8 @@ Colleges and universities often struggle with disjointed legacy software for roo
     category: 'Enterprise Web Application',
     techStack: ['React', 'TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Docker', 'Tailwind CSS', 'Postman'],
     featured: true,
-    liveUrl: 'https://smartcampus-plus.vercel.app',
-    githubUrl: 'https://github.com/HARSHITHAPRIYAJAVAJI/smartcampus-plus',
+    liveUrl: 'https://smart-campus360.vercel.app/',
+    githubUrl: 'https://github.com/HARSHITHAPRIYAJAVAJI/SmartCampus360',
     metrics: [
       { label: 'Scheduling Speed', value: '10x Faster' },
       { label: 'Conflict Rate', value: '0.0%' },
@@ -328,6 +330,72 @@ Colleges and universities often struggle with disjointed legacy software for roo
         problem: 'Handling edge cases in multi-slot lab equipment reservations with conflicting recurring dates.',
         solution: 'Engineered custom date-range overlap validation algorithms using PostgreSQL interval queries and transaction isolation.',
         impact: 'Eliminated double-booking incidents across all campus facilities completely.',
+      },
+    ],
+  },
+  {
+    id: 'portfolio',
+    slug: 'portfolio',
+    title: 'Modern Developer Portfolio',
+    tagline: 'High-Performance Engineering Portfolio & Case Study Showcase',
+    description:
+      'A luxury editorial developer portfolio built with React 19, TypeScript, and Tailwind CSS. Features dynamic particle physics, ambient mouse spotlighting, in-depth architectural case studies, and interactive CV generation.',
+    fullOverview: `This portfolio represents an uncompromising engineering philosophy: combining computational performance, mathematical design precision, and luxury editorial aesthetics inspired by design-forward tech companies like Apple, Vercel, and Linear.
+
+Engineered from the ground up with React 19, Vite, and TypeScript, it integrates custom canvas physics, dynamic reactive ambient spotlight cursors, responsive case study route modals, and automated PDF curriculum vitae generation.`,
+    heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80',
+    galleryImages: [
+      'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',
+    ],
+    category: 'Full-Stack / Modern Web',
+    techStack: ['React 19', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Canvas API'],
+    featured: true,
+    liveUrl: 'https://harshitha-priya-portfolio.vercel.app/',
+    githubUrl: 'https://github.com/HARSHITHAPRIYAJAVAJI/portfolio',
+    metrics: [
+      { label: 'Lighthouse Score', value: '99/100' },
+      { label: 'Bundle Load Time', value: '< 200ms' },
+      { label: 'Frame Rate', value: '60 FPS' },
+      { label: 'Accessibility', value: '100%' },
+    ],
+    features: [
+      {
+        title: 'Luxury Editorial Aesthetics & Ambient Spotlight',
+        description: 'Dark gold ambient illumination tracking cursor movement via mathematical interpolation and glassmorphic styling.',
+      },
+      {
+        title: 'Deep Architecture & Case Study Modals',
+        description: 'Deep-dive architectural breakdowns with state isolation, responsive routes, and fluid spring animations.',
+      },
+      {
+        title: 'Custom Particle Physics Canvas',
+        description: 'Self-balancing high-efficiency canvas engine rendering ambient dust particles without blocking main-thread UI operations.',
+      },
+      {
+        title: 'Interactive CV & Celebration Feedback',
+        description: 'Embedded professional curriculum vitae with print-optimized media queries and interactive particle triggers.',
+      },
+    ],
+    architecture: {
+      overview: 'Modular component architecture leveraging React 19 functional patterns, typed custom hooks, and Tailwind CSS design tokens.',
+      frontend: 'React 19, TypeScript, Vite, Tailwind CSS, Framer Motion springs, and HTML5 Canvas.',
+      backend: 'Client-side edge SPA deployed on Vercel with global CDN caching and automated continuous deployment.',
+      database: 'Static typed constant data layer with immutable schemas and O(1) slug resolution.',
+      cachingOrRealtime: 'Vercel Edge Network global caching with instant invalidation on git push.',
+      diagramDescription: 'User Interaction -> Framer Motion / Canvas Compositor -> React 19 Virtual DOM -> Vercel Edge CDN.',
+    },
+    challengesSolved: [
+      {
+        problem: 'Maintaining fluid 60 FPS particle canvas rendering and spotlight gradients during intensive scroll events on mobile devices.',
+        solution: 'Implemented requestAnimationFrame throttling, offscreen canvas coordinate caching, and passive scroll event listeners.',
+        impact: 'Maintained rock-solid 60 FPS animations across low-power mobile devices and laptops.',
+      },
+      {
+        problem: 'Modal and routing synchronization when users navigate via direct deep links or browser back/forward buttons.',
+        solution: 'Configured dual-mode routing supporting both hash-based modal popups and full-page `/project/:slug` viewports.',
+        impact: 'Flawless bookmarking and link sharing without desynchronizing application state.',
       },
     ],
   },

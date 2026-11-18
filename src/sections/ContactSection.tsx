@@ -215,7 +215,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-[#27C93F]" />
               </div>
               <span className="leading-relaxed">
-                Currently based in Bangalore • Open to worldwide remote & relocation opportunities.
+                Currently based in Hyderabad, India • Open to worldwide remote & relocation opportunities.
               </span>
             </div>
           </motion.div>

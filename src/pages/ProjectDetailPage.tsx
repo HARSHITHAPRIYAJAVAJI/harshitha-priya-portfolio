@@ -20,7 +20,9 @@ export const ProjectDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
 
-  const projectIndex = PROJECTS.findIndex((p) => p.slug === slug || p.id === slug);
+  const projectIndex = PROJECTS.findIndex(
+    (p) => p.slug === slug || p.id === slug || (slug === 'smartcampus-plus' && p.slug === 'smartcampus-360')
+  );
   const project = projectIndex !== -1 ? PROJECTS[projectIndex] : PROJECTS[0];
 
   const prevProject = projectIndex > 0 ? PROJECTS[projectIndex - 1] : PROJECTS[PROJECTS.length - 1];

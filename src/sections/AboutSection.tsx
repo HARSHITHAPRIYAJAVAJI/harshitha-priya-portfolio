@@ -103,7 +103,7 @@ export const AboutSection: React.FC = () => {
                 </p>
 
                 <p className="text-xs font-mono text-[#777777] flex items-center justify-center sm:justify-start gap-1.5">
-                  <MapPin size={12} className="text-[#D4AF37]" /> Bangalore, India (Open to Worldwide Remote)
+                  <MapPin size={12} className="text-[#D4AF37]" /> Hyderabad, India (Open to Worldwide Remote)
                 </p>
               </div>
             </div>

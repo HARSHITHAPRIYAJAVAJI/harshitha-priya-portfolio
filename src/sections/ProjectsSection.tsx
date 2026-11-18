@@ -23,7 +23,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
         />
 
         {/* Featured Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div className={`grid grid-cols-1 ${PROJECTS.length % 2 === 0 ? 'md:grid-cols-2' : 'lg:grid-cols-3'} gap-8 items-stretch`}>
           {PROJECTS.map((project, idx) => (
             <ProjectCard
               key={project.id}

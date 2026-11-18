@@ -26,7 +26,9 @@ export const HomePage: React.FC = () => {
         setResumeOpen(true);
       } else if (hash.startsWith('#project-')) {
         const slug = hash.replace('#project-', '');
-        const matched = PROJECTS.find((p) => p.slug === slug || p.id === slug);
+        const matched = PROJECTS.find(
+          (p) => p.slug === slug || p.id === slug || (slug === 'smartcampus-plus' && p.slug === 'smartcampus-360')
+        );
         if (matched) setSelectedProject(matched);
       }
     };

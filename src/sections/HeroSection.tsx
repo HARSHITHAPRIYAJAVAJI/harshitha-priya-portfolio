@@ -273,7 +273,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
                 </div>
 
                 <span className="text-[10px] font-mono text-[#777777] flex items-center gap-1">
-                  <Sparkles size={11} className="text-[#D4AF37]" /> Bangalore, India
+                  <Sparkles size={11} className="text-[#D4AF37]" /> Hyderabad, India
                 </span>
               </div>
 
